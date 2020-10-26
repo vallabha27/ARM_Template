@@ -21,3 +21,4 @@ steps:
     templateLocation: 'URL of the file'
     csmFileLink: 'https://github.com/vallabha27/ARM_Template/blob/Master/arm_vm.json'
     deploymentMode: 'Incremental'
+
