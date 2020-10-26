@@ -13,13 +13,15 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'Free Trial(1bd39d83-da0e-4ff1-a20d-8f069e8d1d13)'
+    azureResourceManagerConnection: 'AzureRmPipeline-conn'
     subscriptionId: '1bd39d83-da0e-4ff1-a20d-8f069e8d1d13'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'psrg'
     location: 'East US'
-    templateLocation: 'URL of the file'
-    csmFileLink: 'https://github.com/vallabha27/ARM_Template/blob/Master/arm_vnet.json'
-    deploymentMode: 'Complete'
+    templateLocation: 'Linked artifact'
+    csmFile: 'ARM_Template/arm_vnet.json'
+    overrideParameters: 'Enter -projectName ARM_Template -linkedTemplateUri https://github.com/vallabha27/ARM_Template/blob/Master/arm_vnet.json'
+    deploymentMode: 'Incremental'
+    deploymentName: 'DeployPipelineTemplate'
     
 
