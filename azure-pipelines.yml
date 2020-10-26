@@ -19,7 +19,7 @@ steps:
     resourceGroupName: 'psrg'
     location: 'East US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://github.com/vallabha27/ARM_Template/blob/Master/arm_vm.json'
-    deploymentMode: 'Incremental'
+    csmFileLink: 'https://github.com/vallabha27/ARM_Template/blob/Master/arm_vnet.json'
+    deploymentMode: 'Complete'
     
 
