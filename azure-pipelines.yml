@@ -20,7 +20,7 @@ steps:
     location: 'East US'
     templateLocation: 'Linked artifact'
     csmFile: 'ARM_Template/azuredeploy.json'
-    overrideParameters: 'Enter -projectName ARM_Template -linkedTemplateUri https://github.com/vallabha27/ARM_Template/blob/Master/linkedStorageAccount.json'
+    overrideParameters: '-projectName ARM_Template -linkedTemplateUri https://github.com/vallabha27/ARM_Template/blob/Master/linkedStorageAccount.json'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
     
